@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></scripte
     <![endif]-->
   </head>
   <body>
     <div class="wrapper">
-      <h1>Elite Dangerous: Rare Commodities Star Chart</h1>
-      <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
-      <div id="series_chart_div" style="height: 70vh;"></div>
-      <p style="text-align: center">Use the mouse to pan or zoom</p>
-
-      <b>Alternative Resources:</b>
-      <ul>
+      <script src="javascripts/jquery-2.1.3.min.js"></script>
+      <h3>Elite Dangerous: Rare Commodities Star Chart</h3>
+      <div class="map">
+        <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+        <div id="series_chart_div" style="height: 70vh;"></div>
+        <p style="text-align: center"><b>Use the mouse to pan or zoom</b></p>
+      </div>
+      <div class="footer">
+        <b>Alternative Resources:</b>
+        <ul>
           <li><a href="https://docs.google.com/spreadsheets/d/1haUVaFIxFq5IPqZugJ8cfCEqBrZvFFzcA-uXB4pTfW4/htmlview?pli=1&sle=true#">Spreadsheet</a></li>
-      <li><a href="https://www.elitedangeroustrader.co.uk/rares-systems-3d-map/">3D Map</a></li>
-      </ul>
-
-      <script type="text/javascript" src="javascripts/chart.js"></script>
+         <li><a href="https://www.elitedangeroustrader.co.uk/rares-systems-3d-map/">3D Map</a></li>
+        </ul>
+      <div>
     </div>
+    <script type="text/javascript" src="javascripts/chart.js"></script>
     <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
