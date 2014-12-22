@@ -96,8 +96,12 @@ var graphLongDistances =
     ['Wheemete (-140)', 145, 132, 'Wheemete Wheat Cakes', -140],
   ];
 
-var drawSeriesChart = function() {
+var drawStarChart = function() {
   var distances = graphShortDistances.slice(0);
+  if ($("#long-trip").is(':checked')) {
+    distances = distances.concat(graphLongDistances);
+  }
+  distances = distances.sort();
   var dataArray = graphHeader.concat(distances);
   var data = google.visualization.arrayToDataTable(dataArray);
   var options = {
@@ -110,8 +114,14 @@ var drawSeriesChart = function() {
     }
   };
 
-  var chart = new google.visualization.BubbleChart($('#series_chart_div')[0]);
+  var chart = new google.visualization.BubbleChart($('#star-chart')[0]);
   chart.draw(data, options);
 }
 
-google.setOnLoadCallback(drawSeriesChart);
+google.setOnLoadCallback(drawStarChart);
+
+$( document ).ready(function() {
+ $("#long-trip").on("change", function() {
+   drawStarChart();
+ });
+});

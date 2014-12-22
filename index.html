@@ -18,8 +18,11 @@
       <h3>Elite Dangerous: Rare Commodities Star Chart</h3>
       <div class="map">
         <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
-        <div id="series_chart_div" style="height: 70vh;"></div>
-        <p style="text-align: center"><b>Use the mouse to pan or zoom</b></p>
+        <div id="star-chart" style="height: 70vh;"></div>
+        <div style="text-align: center;">
+          <p><b>Use the mouse to pan or zoom</b></p>
+          <label><input type="checkbox" id='long-trip'>Include systems with long trips to stations</label>
+        </div>
       </div>
       <div class="footer">
         <b>Alternative Resources:</b>
