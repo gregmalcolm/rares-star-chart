@@ -109,7 +109,6 @@ var drawStarChart = function() {
     chartArea: {width: '70%', height: '90%'},
     sizeAxis: {minSize: 1, maxSize: 14},
     explorer: {
-      actions: ['dragToPan'],
       maxZoomOut: 1,
     }
   };
